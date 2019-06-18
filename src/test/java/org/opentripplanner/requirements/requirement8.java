@@ -13,7 +13,7 @@ public class requirement8 {
 
     @Test
     public void test() {
-        File config = new File("/Users/luuk/Development/OpenTripPlanner/src/test/java/org/opentripplanner/requirements");
+        File config = new File("./src/test/java/org/opentripplanner/requirements");
 
         OTPConfiguration otpConfiguration = new OTPConfiguration(config);
         JsonNode configuration = otpConfiguration.getGraphConfig(config).routerConfig();
