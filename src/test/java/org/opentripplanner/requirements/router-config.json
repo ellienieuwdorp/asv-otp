@@ -1,0 +1,18 @@
+{
+    "updaters": [
+        {
+            "type": "stop-time-updater",
+            "frequencySec": 60,
+            "sourceType": "gtfs-http",
+            "url": "http://gtfs.openov.nl/gtfs-rt/tripUpdates.pb",
+            "feedId": "NL"
+        },
+        {
+            "type": "stop-time-updater",
+            "frequencySec": 60,
+            "sourceType": "gtfs-http",
+            "url": "http://gtfs.openov.nl/gtfs-rt/trainUpdates.pb",
+            "feedId": "NLTRAIN"
+        }
+    ]
+}
