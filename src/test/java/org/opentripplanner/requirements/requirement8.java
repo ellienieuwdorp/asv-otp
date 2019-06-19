@@ -6,7 +6,7 @@ import org.opentripplanner.standalone.config.OTPConfiguration;
 
 import java.io.File;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 public class requirement8 {
 
@@ -24,8 +24,8 @@ public class requirement8 {
 
             String url = configItem.path("url").asText();
             if (url != null) {
-                if (iterator == 0) assertTrue(url.equals(urlOne));
-                if (iterator == 1) assertTrue(url.equals(urlTwo));
+                if (iterator == 0) assertEquals(url, urlOne);
+                if (iterator == 1) assertEquals(url, urlTwo);
             }
             iterator++;
         }
