@@ -11,7 +11,7 @@ public class requirement1 {
 
     @Test
     public void test() {
-        // Create routing request (Act)
+        // Create routing request (Arrange)
         RoutingRequest routingRequest = new RoutingRequest();
 
         // Create data to enter in to the RoutingRequest
@@ -24,7 +24,7 @@ public class requirement1 {
         double toLat = 4.907845;
         double toLng = 52.361756;
 
-        // Set the routing request according to data (Arrange)
+        // Set the routing request according to data (Act)
         routingRequest.from = new GenericLocation(fromPlace, fromPlace + " (" + fromLat + ", " + fromLng + ")");
         routingRequest.to = new GenericLocation(toPlace, toPlace + " (" + toLat + ", " + toLng + ")");
 
