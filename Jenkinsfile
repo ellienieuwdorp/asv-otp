@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'tests' }
+    agent any
 
     options {
         timestamps()
