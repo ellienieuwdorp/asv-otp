@@ -28,7 +28,7 @@
                 stage("Verify") {
                     steps {
                         withSonarQubeEnv("sonarcloud") {
-                          sh "mvn sonar:sonar -Dsonar.projectKey=asv-otp-orig -Dsonar.organization=luuknieuwdorp-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=486640787d37093ab5f887d0bba209ada0a98f26"
+                          sh "mvn sonar:sonar -Dsonar.projectKey=asv-otp-orig -Dsonar.organization=luuknieuwdorp-github"
                         }
                     }
                 }
