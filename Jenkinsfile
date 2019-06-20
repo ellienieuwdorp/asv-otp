@@ -5,12 +5,6 @@
         timestamps()
     }
 
-    post {
-        always {
-            junit 'modules/**/target/surefire-reports/**.xml'
-        }
-    }
-
     stages {
         stage("Run with JDK 8 and maven") {
             agent {
