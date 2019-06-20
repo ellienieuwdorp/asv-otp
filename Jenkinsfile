@@ -6,7 +6,7 @@ pipeline {
     }
     
     stages {
-        stage("Run with JDK 8 and maven") {
+        stage("Maven setup") {
             agent {
                 docker {
                     image 'maven:3.6.0-jdk-8'
