@@ -15,7 +15,7 @@ import java.util.TimeZone;
 import static org.junit.Assert.assertEquals;
 
 public class RequirementTests {
-    
+
     @Test
     public void testRequirement1() {
         // Create routing request (Arrange)
@@ -66,7 +66,7 @@ public class RequirementTests {
         String secondDateTime = "14:00";
         TimeZone secondDateTimeZone = TimeZone.getTimeZone("GMT+2");
 
-        long customDateUnix = 1560951033000L;
+        long customDateUnix = customDate.getTime();
         long secondDateUnix = 1561377600000L;
 
         // Set the dates
