@@ -1,5 +1,4 @@
  pipeline {
-    agent { label 'dev-2.x' }
 
     options {
         timestamps()
