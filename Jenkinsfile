@@ -28,7 +28,7 @@ pipeline {
                 stage("Verify") {
                     steps {
                         withSonarQubeEnv("sonarcloud") {
-                          sh "mvn sonar:sonar -Dsonar.projectKey=asv-otp -Dsonar.organization=luuknieuwdorp-github"
+                          sh "mvn sonar:sonar -Dsonar.projectKey=luuknieuwdorp_asv-otp -Dsonar.organization=luuknieuwdorp-github"
                         }
                     }
                 }
