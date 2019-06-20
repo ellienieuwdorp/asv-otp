@@ -34,11 +34,8 @@ pipeline {
                 stage("Verify") {
                     steps {
                         withSonarQubeEnv("sonarcloud") {
-                          sh "mvn sonar:sonar -Dsonar.projectKey=asv-otp -Dsonar.organization=luuknieuwdorp-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=76d18d8c98ebb2a91b7993d962b09a25fa31d531"
+                          sh "mvn sonar:sonar -Dsonar.projectKey=asv-otp -Dsonar.organization=luuknieuwdorp-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=c917edb074d3e4c833c867d218bee498aa149695"
                         }
-                        // timeout(time: 30, unit: "MINUTES") {
-                        //     waitForQualityGate abortPipeline: true
-                        // }
                     }
                 }
 
