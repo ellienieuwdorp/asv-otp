@@ -175,7 +175,8 @@ public class RequirementTests {
         // and the amount of legs is equal to the number specified in legCount (Assert)
         Itinerary itinerary = tripPlan.itinerary.get(0);
 
-        assertTrue(itinerary.legs.get(0).mode.equals(TraverseMode.RAIL) || itinerary.legs.get(0).mode.equals(TraverseMode.WALK));
+        assertTrue(itinerary.legs.get(0).mode.equals(TraverseMode.RAIL.toString()) ||
+                            itinerary.legs.get(0).mode.equals(TraverseMode.WALK.toString()));
         assertEquals(legCount, itinerary.legs.size());
     }
 
