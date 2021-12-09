@@ -80,7 +80,7 @@
     <properties>
         <geotools.version>20.1</geotools.version>
         <geotools.wfs.version>16.5</geotools.wfs.version>
-        <jackson.version>2.9.7</jackson.version>
+        <jackson.version>2.9.10.8</jackson.version>
         <jersey.version>2.18</jersey.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
